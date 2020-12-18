@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HFPopMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="352"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiaopingguo" translatesAutoresizingMaskIntoConstraints="NO" id="Q9e-XU-OX2">
+                    <rect key="frame" x="0.0" y="0.0" width="347" height="352"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ6-Vp-xBt">
+                    <rect key="frame" x="314" y="10" width="20" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="alphaClose"/>
+                    <connections>
+                        <action selector="closeBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="NKg-6p-q8C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Q9e-XU-OX2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CuU-oz-ayH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Q9e-XU-OX2" secondAttribute="bottom" id="FP6-NW-hQE"/>
+                <constraint firstItem="Q9e-XU-OX2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZFH-QP-rsF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Q9e-XU-OX2" secondAttribute="trailing" id="hYC-zx-r8d"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-61.594202898550726" y="-96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alphaClose" width="19.5" height="19.5"/>
+        <image name="xiaopingguo" width="200" height="200"/>
+    </resources>
+</document>
